@@ -1,0 +1,34 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">
+                <h3 class="team" id="home-team">HOME</h3>
+                <h2 class="score" id="home-score">0</h2>
+                 <div class="btn-wrapper">
+                    <button class="btn" onclick="addPoints('home',1)" >+1</button>
+                    <button class="btn" onclick="addPoints('home',2)">+2</button>
+                    <button class="btn" onclick="addPoints('home',3)">+3</button>
+                </div>
+            </div>
+            <div class="column">
+                <h3 class="team" id="guest-team">GUEST</h3>
+                <h2 class="score" id="guest-score">0</h2>
+                 <div class="btn-wrapper">
+                    <button class="btn" onclick="addPoints('guest',1)">+1</button>
+                    <button class="btn" onclick="addPoints('guest',2)">+2</button>
+                    <button class="btn" onclick="addPoints('guest',3)">+3</button>
+                </div>
+            </div>            
+        </div>
+       <button id="newgame-btn">New Game</button> 
+        <script src="index.js"></script>
+    </body>
+</html>

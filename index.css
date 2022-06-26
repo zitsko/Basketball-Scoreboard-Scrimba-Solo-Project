@@ -1,0 +1,97 @@
+@font-face {
+    font-family: CursedTimer;
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background:  #1B244A;
+    font-family: 'Orbitron', sans-serif;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap:2.5rem;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    }
+    
+.score {
+    background: #0a0001;
+    color: #F94F6D;
+    min-width: 6rem;
+    max-width: 10.625rem;
+    margin: 1rem;
+    font-family: CursedTimer;
+    font-size: 4rem;
+    padding:1.25rem;
+    border-radius:0.3125rem;    
+  }
+  
+.btn-wrapper{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.btn {
+    background: none;
+    font-family: CursedTimer;
+    font-size: 1rem;
+    border: 0.125rem solid #9AABD8;
+    border-radius:0.3125rem; 
+    color:  #9AABD8;
+    padding:0.5rem 0.625rem;
+    margin:0 0.3125rem;
+}
+
+.btn:hover,
+.btn:focus  {
+  color:#F94F6D;  
+  border: 0.125rem solid #F94F6D;
+  transform: scale(1.05);
+  transition: all ease 300ms;
+}
+
+.team{
+    color: #EEEEEE;
+    font-size: 2.5rem;
+}
+
+#newgame-btn{
+    margin: 1.25rem 0.625rem;
+    justify-self: center;
+    padding: 0.5rem 1rem;
+    color:#EEEEEE;
+    background:  #1B244A;
+    font-size:1.625rem;
+    border: 0.125rem solid #eee;
+    border-radius: 0.3125rem;
+   }
+   
+#newgame-btn:hover,
+#newgame-btn:focus{
+    color:#F94F6D;
+    font-family: CursedTimer;
+    border: 0.125rem solid #F94F6D;
+}
+
+.highlight{
+    color: lightgreen;
+    transform: scale3d(1.1,1.2,1.1);
+  }
+
+@media  (min-width:800px){
+    .score{
+        font-size: 6rem;  
+        margin: 1rem 4rem; 
+        min-width: 9.5rem;
+        max-width: 20rem;   
+    }
+    .btn{
+        font-size: 1.5rem;   
+    }
+}
