@@ -33,6 +33,7 @@ Users should be able to:
 - HTML5 markup
 - CSS 
 - CSS Flexbox
+- CSS Grid
 - Javascript
 
 ### Useful resources
